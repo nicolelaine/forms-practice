@@ -9,43 +9,62 @@
 <body>
     <h1>Race Registration!</h1>
     <form action="/search">  
-        <p>
+
+   <!-- First and last name fields -->
+<div>
         <label for="first">First name:</label>
         <input type="text" id="first" name="firstname" required>
     
         <label for="last">Last Name:</label>
         <input type="text" id="last" name="lastname" required>
-        </p>
+ </div>
 
+    <!-- Select a race -->
         <p>
         Select A Race:
         </p>
      
+    <!-- Radio buttons for races -->
+
+     <div>
         <label for="funrun">Fun Run 5K</label>
-        <input type="radio" id="fun" name="race" value="funrun" required>
-       <br>
+        <input type="radio" id="funrun" name="race" value="funrun" required>
+     </div>
+     <div>
         <label for="half">Half Marathon</label>
         <input type="radio" id="half" name="race" value="half" required>
-       <br>
+    </div>
+    <div>
         <label for="full">Full Marathon</label>
         <input type="radio" id="full" name="race" value="full" required>
-        
-        <p>
+    </div>  
+<br>
+
+  <!-- Email and password fields -->
+      <div>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
 
-        <label for"password>Password</label>
+        <label for="password">Password</label>
         <input type="password" id="password" name="password" required>
-        </p>
+    </div>
+  
+      <!-- Drop down for select age fields -->
+
+    <div>
         <label for="age">Select Age Group</label>
         <select name="age" id="age" required>
             <option value="youth">under 18</option>
             <option value="adult">18-45</option>
             <option value="mature">45+</option>
         </select>
-        <br>
+    </div>
+    <div>
+
+      <!-- Submit button -->
+
         <button type="submit">Register!</button>
-       
+    </div>
     </form>
    
 </body>
